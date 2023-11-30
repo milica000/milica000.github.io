@@ -1,0 +1,722 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.baner{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(../img/background4.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+}
+.navigacija{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    flex: 1;
+    justify-content: space-between;
+    font-family: 'Poiret One', sans-serif;
+}
+.logo{
+    width: 70px;
+    border-radius: 35px;
+}
+.navigacija ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navigacija ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navigacija ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: rgb(110, 3, 3);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navigacija ul li:hover::after{
+    width: 100%;
+    color: rgb(110, 3, 3);
+}
+.tekst1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+}
+.tekst1 h1{
+    font-size: 80px;
+    margin-top: 80px;
+}
+.tekst1 hr{
+    width: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    margin: 0px auto;
+}
+.tekst1 p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 16px;
+}
+button{
+    width: 200px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 25px 10px;
+    margin: 20px 10px;
+    border: 2px solid rgb(255, 255, 255);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 800px;
+}
+/*span{
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}*/
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+    background-color: rgb(110, 3, 3);
+    color: white;
+    transition: 0.5s;
+}
+.dugmem{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/*.meni{
+    width: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    color:white;
+}
+.meni:hover{
+    width: 2%;
+}
+.meni:hover{
+    border: none;
+    background-color: lightblue;
+    color: black;
+    transition: 0.5s;
+}*/
+/*.dropdownmeni{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 100px;
+    height: 0;
+    background: linear-gradient(gray, black);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Audiowide', sans-serif;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdownmeni li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdownmeni li a{
+    color: white;
+    font-size: 10px;
+}*/
+.nas{
+    background-color: black;
+    opacity: 0.75;
+    border-top: 1px solid black;
+}
+.ttt{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.ttt img{
+    width: 300px;
+    border-radius: 100px 50px;
+    padding: 10px;
+}
+.nas h1{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 80px;
+}
+.ttt p{
+    color: white;
+    padding: 10px;
+    align-items: left;
+    font-size: 20px;
+    font-family: 'Poiret One', sans-serif;
+}
+.ttt img:hover{
+    border: none;
+    transition: 0.5s;
+    width: 320px;
+    border-radius: 110px 60px;
+}
+/*.dld{
+    background-color: black;
+    opacity: 0.75;
+    border-top: 1px solid black;
+}
+.levo .desno{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.levo img{
+    width: 300px;
+    border-radius: 100px 50px;
+    padding: 10px;
+}
+.levo img:hover{
+    border: none;
+    transition: 0.5s;
+    width: 320px;
+    border-radius: 110px 60px;
+}
+.dld h1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Audiowide', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 80px;
+}
+.desno p{
+    color: white;
+    padding: 10px;
+    align-items: left;
+    font-size: 20px;
+    font-family: 'Audiowide', sans-serif;
+}
+.desno button{
+    width: 100px;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 25px 10px;
+    margin: 20px 10px;
+    border: 2px solid lightblue;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}*/
+.blok3{
+    background-color: black;
+    opacity: 0.75;
+    border-top: 1px solid black;
+}
+.blok3 h1{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+.lokacija{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lokacija img{
+    width: 280px;
+    border-radius: 70px 35px;
+    padding: 10px;
+}
+.lokacija img:hover{
+    border: none;
+    transition: 0.5s;
+    width: 300px;
+    border-radius: 100px 50px;
+}
+.lokacija p{
+    color: white;
+    padding: 10px;
+    align-items: left;
+    font-size: 20px;
+    font-family: 'Poiret One', sans-serif;
+}
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.392);
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* margin-left: 15%; */
+}
+
+footer div {
+    display: block;
+    margin: 0px auto;
+}
+
+footer p{
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Poiret One', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+}
+
+.container h1{
+    color: rgb(189, 230, 243);
+    font-size: 56px;
+}
+video{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px 50px;
+    justify-content: space-around;
+}
+.vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vid p{
+    font-family: 'Poiret One', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 7px;
+    align-items: center;
+}
+video:hover{
+    width: 35%;
+    transition: 2s;
+}
+/*.formaslika{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    align-items: center;
+    margin-left: 15%;
+}
+    /*border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+/*.formaslika img{
+    width: 500px;
+    border-radius: 70px 35px;
+}
+.formaslika img:hover{
+    border: none;
+    transition: 0.5s;
+    width: 550px;
+    border-radius: 100px 50px;
+}
+.formaslika form{
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Audiowide', sans-serif;
+    width: 70%;
+}
+input[type=text]{
+    color: black;
+    border-radius: 10px;
+    background-color: lightblue;
+    padding: 5px;
+    border:none;
+}
+input[type=email]{
+    color: black;
+    border-radius: 10px;
+    background-color:lightblue;
+    padding: 5px;
+    border: none;
+}
+input[type=text]:focus {
+    background-color: rgb(61, 61, 129);
+    color:white;
+    border: 1px solid rgb(61, 61, 129);
+}
+input[type=email]:focus {
+    background-color: rgb(61, 61, 129);
+    color:white;
+    border: 1px solid rgb(61, 61, 129);
+}
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-size: 16px;
+}
+input[type=radio]{
+    background-color: lightblue;
+    color: darkblue;
+}
+input[type=submit]{
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: color 1s;
+    overflow: hidden;
+    position: relative;
+    background-color: lightblue;
+}
+input[type=submit]:hover{
+    color: darkblue;
+}
+input[type=submit]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 0;
+    height: 100%;
+    background-color: none;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+input[type=submit]::before{
+    width: 150%;
+}*/
+
+.region{
+    background-color: whitesmoke;
+    margin: 200px;
+    margin-top: 7%;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    font-family: 'Poiret One', sans-serif;
+    border-radius: 100px;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 4%;
+}
+.radnov{
+    background-color: rgb(110, 3, 3);
+    padding: 50px;
+    outline: 2px dashed rgb(110, 3, 3);
+    text-align: center;
+    border-radius: 100px;
+}
+.nasl{
+    font-size: 35px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.vreme{
+    color: white;
+    font-size: 20px;
+}
+.radnov p{
+    color: white;
+}
+.brtel{
+    color: whitesmoke;
+    font-size: 15px;
+}
+.forma{
+    padding: 20px 0;
+    margin: 0 auto;
+    color: black;
+}
+form{
+    display: grid;
+    grid-row-gap: 20px;
+}
+.poljef{
+    display: flex;
+    justify-content: space-between;
+}
+input,select{
+    pad: 10px 15px;
+}
+form p{
+    font-weight: 600px;
+}
+input[type=submit]{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 100px;
+    transition: color 1s;
+    font-family:'Poiret One', sans-serif;
+    font-weight: 100px;
+}
+input[type=text]{
+    border-radius: 10px;
+    padding: 5px;
+}
+input[type=email]{
+    border-radius: 10px;
+    padding: 5px;
+}
+ input[type=text]:focus{
+    background-color:  rgb(110, 3, 3);
+    color:white;
+    border: 1px solid  rgb(110, 3, 3);
+}
+input[type=email]:focus {
+    background-color:  rgb(110, 3, 3);
+    color:white;
+    border: 1px solid  rgb(110, 3, 3);
+}
+input[type=submit]:hover{
+    background-color:  rgb(110, 3, 3);
+    color: white;
+    font-weight: 100px;
+}
+input[type=submit]::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 0;
+    height: 100%;
+    background-color: none;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+}
+input[type=submit]::before{
+    width: 150%;
+}
+input[type=date]{
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Poiret One', sans-serif;
+}
+input[type=date]:focus{
+    background-color:  rgb(110, 3, 3);
+    color:white;
+    border: 1px solid  rgb(110, 3, 3);
+    font-family: 'Poiret One', sans-serif;
+}
+select{
+    border-radius: 10px;
+    padding: 5px;
+}
+select:focus{
+    background-color:  rgb(110, 3, 3);
+    color:white;
+    border: 1px solid  rgb(110, 3, 3);
+    font-family: 'Poiret One', sans-serif;
+}
+select option{
+    border-radius: 10px;
+    padding: 5px;
+}
+.tekst{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-family: 'Poiret One', sans-serif;
+    color: white;
+    justify-content: space-around;
+    font-size: 25px;
+    flex-direction: column;
+}
+.tekst img{
+    width: 300px;
+    margin-top: -2%;
+}
+.Snimanja{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 200px 100px;
+    justify-content: space-between;
+}
+.Snimanja video{
+    width: 30%;
+    display: flex;
+}
+.Snimanja video:hover{
+    width: 40%;
+}
+.tekst22{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poiret One', sans-serif;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+.tekst22 hr{
+    width: 100%;
+    border: 1px solid whitesmoke;
+}
+.tekst22 h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 1%;
+}
+.tekst22 p{
+    font-size: 40px;
+    color: white;
+    margin-top: 1%;
+}
+.slikesnimanja img{
+        position: absolute; 
+        width: 15%;
+        left: 45%;
+        border-radius: 50px 20px;
+}
+@keyframes animacija{
+    0%{opacity: 1;}
+    15% {opacity: 1;}
+    30%{opacity: 0;}
+    90% {opacity:0;}
+    100% {opacity:1;}
+}
+.slikesnimanja img:nth-child(1) {
+    animation: animacija 15s 0s infinite; 
+    z-index:5;
+}
+
+.slikesnimanja img:nth-child(2) {
+    animation: animacija 15s 3s infinite;
+    z-index:4;
+}
+
+.slikesnimanja img:nth-child(3) {
+    animation: animacija 15s 6s infinite; 
+    z-index:3;
+}
+
+.slikesnimanja img:nth-child(4) {
+    animation: animacija 15s 9s infinite; 
+    z-index:2;
+}
+.slikesnimanja img:nth-child(5) {
+    animation: animacija 15s 12s infinite;
+    z-index:1;
+}
+h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 1%;
+}
+.ja img{
+    width: 300px;
+    border-radius: 30px 15px;
+    margin-bottom: 1%;
+}
+.ja{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poiret One', sans-serif;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.ja hr{
+    width: 80%;
+    border: 1px solid whitesmoke;
+}
+.ja p{
+    font-size: 20px;
+    color: white;
+    margin-top: 1%;
+}
+.ja img:hover{
+    width: 350px;
+    transition: 2s;
+}
+.current{
+    border-bottom: 3px solid rgb(110, 3, 3);
+    padding-bottom: 3px;
+    border-radius: 1px;
+}

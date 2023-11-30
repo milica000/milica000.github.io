@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>DeLunaDance</title>
+    <link></link>
+    <description>Obaveštenja iz našeg kluba</description>
+        <item>
+            <title>DeLunaDance - Novi snimci snimanja na društvenim mrežama</title>
+            <link>https://dark-kata.github.io/PonudaFH16.html</link>
+            <description>Odgledajte najnovije snimke na našem profilu</description>
+        </item>
+        <item>
+            <title>DeLunaDance - Nova koreografija od naše NeleDeLune</title>
+            <link>https://dark-kata.github.io/Gallery.html</link>
+            <description>Nova koreografija na štiklama</description>
+        </item>
+</channel>
+
+</rss>
